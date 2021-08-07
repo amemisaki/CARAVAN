@@ -55,10 +55,9 @@
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
-        <!-- body部分 下で変更します -->
       <%= @blog.body %>
       <%= link_to "編集", edit_blog_path(@blog) %>
-        <!-- body部分 ここまで -->
+      <%= link_to "削除", blog_path(@blog), method: :delete %>
       </p>
       <a href="#">編集</a>
       <a href="#">削除</a>
